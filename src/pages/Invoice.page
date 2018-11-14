@@ -7,7 +7,7 @@
         </apex:pageBlock>   
         <apex:pageBlock title="Invoice">
         </apex:pageBlock> 
-        <apex:pageBlock title="Invoice Lines">
+        <apex:pageBlock title="Test Lines">
    			<apex:pageBlockTable value="{!Invoice_Header__c.Invoice_Lines__r}" var="line">
                 <apex:column value="{!line.Selling_Item__r.Product__r.Name}"/> 
                 <apex:column value="{!line.Quantity__c}"/>   
