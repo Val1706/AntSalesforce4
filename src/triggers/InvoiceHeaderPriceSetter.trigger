@@ -10,7 +10,7 @@ trigger InvoiceHeaderPriceSetter on Invoice_Line__c (after insert, after update)
                                                Invoice_Header__c WHERE Id = :invoiceLine.Invoice__c];
             
             for (Invoice_Line__c headerInvoiceLine : invoiceHeader.Invoice_Lines__r){
-                totalPrice += (Decimal) headerInvoiceLine.get('Hi');
+                totalPrice += (Decimal) headerInvoiceLine.get('Hi man!');
             }
             
             invoiceHeader.Total_Price__c = totalPrice;
