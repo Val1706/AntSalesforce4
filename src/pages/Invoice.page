@@ -1,6 +1,6 @@
 <apex:page standardController="Invoice_Header__c"  applyBodyTag="false" renderAs="pdf">
 	<apex:form >
-    	<apex:pageBlock title="000">
+    	<apex:pageBlock title="000111">
             <apex:pageBlockSection >
                 <apex:outputField value="{! Invoice_Header__c.Customer__r.Name }"/>
           	</apex:pageBlockSection>
