@@ -1,7 +1,7 @@
 trigger InvoiceHeaderPriceSetter on Invoice_Line__c (after insert, after update) {
         
         Invoice_Header__c [] recordsToInsert = new List<Invoice_Header__c>();
-    	Decimal totalPrice = 333;
+    	Decimal totalPrice = 211;
     
         for (Invoice_Line__c invoiceLine : Trigger.new){
             
